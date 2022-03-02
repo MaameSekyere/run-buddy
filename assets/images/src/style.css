@@ -5,9 +5,8 @@
 }
 
 body {
-  /* more on this crazy alphanumerical value in a minute! */
   color: #39a6b2;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Halvetica, Arial, sans-serif;
 }
 
 /* apply styles to <header> */
@@ -23,6 +22,7 @@ header h1 {
   margin: 0;
   display: inline;
 }
+
 header a {
   text-decoration: none;
   color: #fce138;
@@ -43,6 +43,7 @@ header nav ul li a {
   font-size: 22px;
 }
 
+/* applying styles to <footer> */
 footer {
   background: #fce138;
   width: 100%;
@@ -70,7 +71,7 @@ section {
   padding: 60px;
 }
 
-/* Hero Style Start */
+/* Hero start style */
 .hero {
   background-image: url("../assets/images/hero-bg.jpg");
   height: 600px;
@@ -78,25 +79,25 @@ section {
   background-position: center;
   position: relative;
 }
-/* Hero Style End */
 
 .hero-form {
-  border: 3px solid #024e76;
+  color: #024e76;
   background-color: #fce138;
   padding: 20px;
   width: 500px;
-  color: #024e76;
+  border: solid 3px #024e76;
   position: absolute;
   bottom: 120px;
   right: 140px;
 }
 
+.hero-form p {
+  margin: 5px 0 15px 0;
+}
+
 .hero-form h3 {
   font-size: 24px;
   margin: 0;
-}
-.hero-form p {
-  margin: 5px 0 15px 0;
 }
 
 .form-input {
@@ -114,12 +115,13 @@ section {
 }
 
 .hero-form button {
-  color: #fce138;
   background-color: #024e76;
+  color: #fce138;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
 }
+/* Hero Style End */
 
 .intro {
   text-align: center;
@@ -225,18 +227,22 @@ section {
 .text-right {
   text-align: right;
 }
+
 /* REACH OUT STYLES START */
 .contact {
   text-align: center;
   background: #024e76;
 }
+
 .contact h2 {
   color: #fce138;
 }
+
 .contact-info iframe {
   width: 400px;
   height: 400px;
 }
+
 .contact-info div {
   width: 410px;
   display: inline-block;
@@ -245,6 +251,7 @@ section {
   margin: 30px 0 0 60px;
   color: white;
 }
+
 .contact-info h3 {
   color: #fce138;
   font-size: 32px;

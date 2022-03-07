@@ -18,10 +18,9 @@ header {
   flex-wrap: wrap;
   position: -webkit-sticky;
   position: sticky;
-  top: 0%;
+  top: 0;
   background-image: url("../images/hero-bg.jpg");
   background-size: cover;
-  background-position: center;
   background-attachment: fixed;
   background-position: 80%;
 }
@@ -97,9 +96,6 @@ section {
 .hero {
   background-image: url("../images/hero-bg.jpg");
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-position: 80%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -110,9 +106,9 @@ section {
 
 .hero-form {
   color: #024e76;
-  background-color: #fce138;
+  background-color: rgba(255, 225, 56, 0.8);
   padding: 20px;
-  border: solid 3px #024e76;
+  border: 3x solid #024e76;
   width: 40%;
   margin: 3.5%;
   border-radius: 15px;
@@ -199,10 +195,10 @@ section {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-}
-
-.step:nth-child(even) {
   border-bottom: 1px solid #39a6b2;
+}
+.step:last-child {
+  border-bottom: none;
 }
 
 .step h3 {
@@ -224,11 +220,14 @@ section {
 .step-img img {
   max-width: 100%;
 }
+.step-text {
+  flex: 12;
+}
 
 .step-text h4 {
   font-size: 26px;
   color: #024e76;
-  flex: 12;
+  line-height: 1.5;
 }
 .step-text p {
   color: #39a6b2;
@@ -243,14 +242,6 @@ section {
   text-align: center;
   margin: 0 auto 35px auto;
   width: 50%;
-}
-
-.primary-border {
-  border-color: #fce138;
-}
-
-.secondary-border {
-  border-color: #39a6b2;
 }
 
 .trainer {
@@ -289,9 +280,6 @@ section {
 
 .trainer-bio p {
   font-size: 17px;
-}
-.flex-row {
-  display: flex;
 }
 
 /* REACH OUT STYLES START */
@@ -374,6 +362,16 @@ section {
 
 /* REACH OUT STYLES END */
 
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.flex-row {
+  display: flex;
+}
+
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
   header {
@@ -415,7 +413,7 @@ section {
     width: 80%;
   }
   .trainer {
-    flex: 1 100%;
+    flex: 0 70%;
   }
   .contact-info iframe {
     flex: 1 100%;
@@ -448,6 +446,11 @@ section {
 
   .step-text {
     flex: 100%;
+  }
+
+  .trainer-bio h3,
+  .trainer-bio h4 {
+    display: block;
   }
 }
 
